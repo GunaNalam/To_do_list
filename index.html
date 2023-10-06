@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="to_do.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid" >
+      <div class="row" >
+        <div class="col-5 shadow h-100" style="background: linear-gradient(to bottom, #33ccff 0%, #99ff99 100%);">
+          <div class="form-group">
+              <div class="row mt-4">
+                <div class="col-2">
+                  TaskName: 
+                </div>
+                <div class="ml-2 col-9">
+                  <input type="text" class="form-control w-75" placeholder="Enter taskname" id="taskname" onClick="this.select();">
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-2">
+                  TaskDeadline:  
+                </div>
+                <div class="ml-2 col-9">
+                  <input type="date" class="form-control w-75" id="taskdate" >
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-2">
+                  Description:  
+                </div>
+                <div class="ml-2 col-9">
+                  <textarea name=""  cols="30" rows="3" class="form-control w-75" placeholder="Enter description if any" id="taskdesc" onClick="this.select();"></textarea>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="offset-4 col-4">
+                  <button class="btn btn-primary" onclick="add()">Add</button>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="offset-3 col-4 shadow " id="tasks-bar" style="background: linear-gradient(to bottom, #cc66ff 0%, #ff3300 100%);">
+          <div class="fs-2 text-center mt-2">Nothing To show</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
